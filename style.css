@@ -4,13 +4,41 @@ body{
     background-image: url("assets/topography.png");
     background-color: #fefefe;
     text-align: center;
-    font-family: Martel, consolas, Courier;
-
-
-    
+    font-family: Martel, consolas, Courier;  
 }
+
+/*logo effect*/
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+#logo{
+
+    max-height: 32px;
+    transition: 1s cubic-bezier( 0.55, 0.17, 0.32, 3 ),
+    transform 1s cubic-bezier( 0.55, 0.17, 0.32, 2 ) ; 
+    overflow:hidden;
+    height:  32px;
+
+  }
+  #logo:hover{
+    transform: rotate(90deg);
+  
+    max-height: 50px;
+    height: 40px;
+  }
+
+/*headings and paragraph*/
+
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#techWiki  h2 {
+    font-size: 2rem;
+    text-align: center;
     font-weight: 900;
 }
 h3{
@@ -19,44 +47,64 @@ h3{
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
+#intro  h3{
+    color:#f09;
+}
 p{
     margin-top: 0.5rem;
 }
+#intro p{
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 100px 0 10px 0;
+}
+/*semantic elements*/
+
 section{
     text-align: left;
-    line-break: strict;
-}
-#intro > h3{
-    color:#f09;
-}
-#techWiki > h2 {
-    text-align: center;
-    font-weight: 900;
+    text-align: justify;
 }
 main{
 
     padding: 0 10%;
 }
+
+/*navigation bar*/
+
 nav{
     
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 10%;
     text-align: left;
     background: #333;
     margin-bottom: 100px;
+    height: 60px;
 
 }
 
-.nav-links > a {
+.nav-links a {
     font-family:  Arial, Helvetica, sans-serif, monospace;
     font-size: 0.9rem;
     color: #f09;
     text-transform: uppercase;
-    padding-left: 35px;
+    margin-left: 35px;
     
 }
 .nav-links{
-   line-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover{
+    color:thistle;
 }
