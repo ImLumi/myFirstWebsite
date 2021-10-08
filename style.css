@@ -24,7 +24,7 @@ body{
     height:  32px;
 
   }
-  #logo:hover{
+#logo:hover{
     transform: rotate(90deg);
   
     max-height: 50px;
@@ -67,7 +67,7 @@ p{
     font-weight: 900;
     margin: 100px 0 10px 0;
 }
-/*semantic elements*/
+/*sections*/
 
 section{
     text-align: left;
@@ -80,8 +80,7 @@ main{
 
 /*navigation bar*/
 
-nav{
-    
+nav{   
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
@@ -89,11 +88,15 @@ nav{
     background: #333;
     margin-bottom: 100px;
     height: 60px;
-
 }
-
-.nav-links a {
-    
+.navLinks{
+    position: relative;
+    left:16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLinks a {  
     font-family:  Arial, Helvetica, sans-serif, monospace;
     font-size: 0.9rem;
     color: #f09;
@@ -101,18 +104,9 @@ nav{
     margin-left: 0;
     padding: 15px 16px 15px 16px;
     border-radius: 5%;
-    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
-    
-    
-}
-.nav-links{
-    position: relative;
-    left:16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 a:hover{
     color: black;
-    background: rgba(182, 182, 182, 0.4);
+    background: rgba(182, 182, 182, 0.4); 
 }
